@@ -37,7 +37,7 @@ a {
     justify-content: space-between;
     align-items: center;
     gap: 60px;
-    /* font-size: 1.5rem; */
+    font-size: 1.5rem;
 }
 
 .nav-branding {
@@ -59,7 +59,7 @@ a {
 
 .hamburger{
     display: none;
-    cursor: pointer;
+    cursor: pointer;  
 }
 
 .bar{
@@ -70,7 +70,6 @@ a {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: white;
-
 }
 
 @media(max-width:768px){
@@ -81,16 +80,9 @@ a {
         opacity: 0;
     }
     .hamburger.active .bar:nth-child(1){
-        transform: translateY(8px); rotate(45deg);
-    }
-    .hamburger.active .bar:nth-child(3){
-        transform: translateY(-8px); rotate(-45deg);
+        transform: translateY(8px);
     }
 
-    .nav-menu{
-        position: fixed; /* Sticky / Navbar remains on the screen */
-    }
-
-
+    
 }
 
